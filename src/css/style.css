@@ -3,7 +3,9 @@
 
 
 body{
-  /* background-color: var(--bg-body); */
+  background-color: var(--bg-body);
+  
+  
 }
 
 .cabecalho{
@@ -12,15 +14,14 @@ body{
     display: flex;
     justify-content: center;    
     align-items: center;
-    box-shadow: 1px 1px 3px 1px #80808087;
   
 }
 
 .cabecalho__icons{
     width: 90%;
     display: flex;
-    justify-content: space-between;
-    align-items: center; 
+    justify-content: flex-end;
+    /* align-items: center;  */
   
 }
 
@@ -33,37 +34,62 @@ body{
 .cabecalho__icons > h2 > i{
     color: var(--yesLike);
 }
+.cabecalho__icons > h2 > img{
+    height: 2.3rem;
+    transform: translateY(5px);
+}
 .darkMode{
-    display: flex;
-    align-self: flex-end;
-    background-color: aqua;  
+  color: var(--color-title);
+  font-weight: 600;
+  cursor: pointer;
 }
 
 
 .container{
+    height: 95vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:1rem  
+    gap:1rem ;
+    background:linear-gradient(rgba(110, 108, 108, 0.3),rgba(48, 41, 41, 0.452)), url(https://wallpapercave.com/wp/Da9GZ33.jpg)  center/cover no-repeat;
+  
+   
 }
 
 .title__container{
     margin-top: 2rem;
+    margin: 0 1rem;
+    width: 45%;
+  
 }
 
+
 .title__container > h1{
+    text-align: center;
     border-bottom: solid 1px ;
     color: var(--color-title);
-    font-size: 2rem;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+   
 }
 .title__container > h1 > i{
    color: var(--yesLike);
+}
+.title__container > h1 > img{
+   height: 5rem;
+   transform: translateY(16px);
+}
+.title__container > .tittle__imgDesktop img{
+   display: none;
+
 }
 
 .title__container > p{
     margin-top: .5rem;
     color: var(--color-text);
     font-weight: 600;
+    text-align: center;
 }
 
 /*  Estilo  Form  */
@@ -71,19 +97,19 @@ body{
     gap: 1rem;
     width: 90%;
     height: 400px;
+    height: auto;
     display: flex;
     padding: 1rem;
     border-radius: 5px;
     flex-direction: column;
     align-content: center;
     border: 1px solid #c5c5c5; 
-    background-color: var(--white);
+   margin-right: 1rem;
    
 }
 .form__container form{
    display: flex;
-   flex-direction: column;
-    border: 1px solid #c5c5c5; 
+   flex-direction: column; 
     /* padding: 1rem; */
     gap: .4rem;
 
@@ -96,26 +122,124 @@ body{
 
 .form label{
     color: var(--color-text);
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .form input{
     margin-bottom: 1rem;
     padding: .9rem;
-    border-radius: .9rem;
+    border-radius: .5rem;
     border: solid 1px;
    
 }
 
 .form  button{
-   color: var(--color-title);
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition:  .3s;   
+    
+    
 }
 
-.form__container >span{
+.form  button:active{
+    background: var(--color-title);
+    color: var(--white);
+    max-width: 100%;
+ 
+}
+
+.form__container > span{
+    text-align: center;
+    color: var(--color-text);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.form__container .link-icons{
+    text-align: center;
+    
+}
+.form__container .link-icons> a{
+    padding: .8rem .4rem;
     color: var(--color-title);
+    font-size: 1.2rem;
+    font-weight: 600;
+   
+    
+}
+
+.form__container > a{
+    color: var(--color-text);
+    text-decoration: none;    
+    text-align: center;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 20%;
+    margin: 0 auto;
+    
+    
 }
 
 
-.form__container >a{
-    text-decoration: none;    
-    text-align: var(--color-title);
+/* ======== Media Query ============= */ 
+
+@media (min-width: 769px){
+    .container {
+        flex-direction: row;
+        background: url("") 
+       
+    }
+   
+    .form__container {
+        max-width: 600px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5rem;
+        height: 700px;
+        max-width: 600px;
+        background:linear-gradient(rgba(73, 73, 73, 0.3),rgba(82, 82, 82, 0.452)), url("https://i.pinimg.com/originals/4c/c3/99/4cc3995fcdebb8e6fe72633768382ef2.jpg")  center/cover no-repeat;
+        background: cover;
+        object-fit: cover;
+
+    }
+    .title__container {
+      margin-bottom: 3rem ;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+    }
+    .title__container > .tittle__imgDesktop img{
+       
+        margin-top: 5rem;
+        display: block;
+        width: 450px;
+        /* max-width: 100%; */
+        height: auto;
+    
+    }
+   
+
+
+}
+
+@media (min-width: 1204px){
+
+    .title__container > .tittle__imgDesktop img{       
+        width:  100%;
+    }
+
+    .form input{
+        width: 91%;
+       
+    }
+     
+    .form  button{
+     width: 25rem ;
+         
+    }
 }

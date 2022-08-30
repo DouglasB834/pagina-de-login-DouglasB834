@@ -52,8 +52,8 @@ table {
 	--bg-body:#fff;
 	--blue: #4263EB;
 	--white: #fff ;
-	--color-text:#495057;
-	--color-title:#212529;
+	--color-text:#000000;
+	--color-title:#474747;
 
 	--yesLike :#D7443E;
 	--noLike: rgba(33, 37, 41, 0.5);
@@ -66,14 +66,14 @@ table {
 	--bg-body:black;
 	--blue: #4263EB;
 	--white: #495057 ;
-	--color-text:#495057;
+	--color-text:#fff;
 	--color-title:#fff;
 
 	--yesLike :#D7443E;
 	--noLike: rgba(33, 37, 41, 0.5);
 	
 	--primary-bg-color:#113ac0;
-	--segund-bg-color:#f1f1f1;
+	--segund-bg-color:#000;
 }
 
 body{

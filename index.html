@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="pagina de login  site">
-    <link rel="shortcut icon" href="src/img/doug.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="src/img/agu-preview.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Config Css -->
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
     <!-- Config Java Script -->
-    <title>ON fires </title>
+    <script defer type="module" src="src/js/login.js"></script>
+    <title>Chama nenem </title>
 </head>
 
 <body>
     <header class="cabecalho">
 
         <div class="cabecalho__icons">
-            <h2> <i class="fa fa-fire" aria-hidden="true"> </i> On Fire</h2>
-            
             <div class="darkMode">
-                <span>dark</span>
+                <span id="btnDarkMode">Dark Mode</span>
             </div>
         </div>
 
@@ -33,8 +32,12 @@
 
         <section class="title title__container">        
 
-            <h1><i class="fa fa-fire" aria-hidden="true"></i> On Fire</h1>
-            <p>Maior rede Social de FPS!</p>
+            <h1><i class="fa fa-fire" aria-hidden="true"></i> Chama Nenem <img src="src/img/agu-preview.png" alt="digmon"></h1>
+            <p>Maior site de FPS do Brasil</p>
+
+            <div class="tittle__imgDesktop">
+                <img src="src/img/DIGIMON-SURVIVEXBOX-GAMEPASS.webp" alt="img digmon">
+            </div>
             
         </section>
 
@@ -54,9 +57,15 @@
                 <button type="submit">Entrar</button>
 
             </form>
+            
+            <div class="link-icons">
+                <a href="#" class="fab fa-linkedin"></a>
+	            <a href="#" class="fab fa-instagram"></a>
+                <a class="fa fa-apple" aria-hidden="true"></a>
+            </div>
+            <span class="form__register">Forgot your password? <a href="cadastrar.html"></a> ➡ Click here</span>
 
-            <span class="form__register">not yet registered??</span>
-
+            <!-- <button  class="form__Pagesignup" >Sing up</button> -->
             <a class="form__Pagesignup" href="#">Sing up</a>
         </section>
     </main>
