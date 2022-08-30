@@ -1,28 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="pagina de login  site">
-    <link rel="shortcut icon" href="src/img/doug.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="src/img/agu-preview.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Config fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Config Css -->
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/styleGlobal.css">
     <link rel="stylesheet" href="src/css/style.css">
     <!-- Config Java Script -->
-    <title>ON fires </title>
+    <script defer type="module" src="src/js/login.js"></script>
+    <title>Chama nenem </title>
 </head>
 
 <body>
     <header class="cabecalho">
 
         <div class="cabecalho__icons">
-            <h2> <i class="fa fa-fire" aria-hidden="true"> </i> On Fire</h2>
-            
             <div class="darkMode">
-                <span>dark</span>
+                <span id="btnDarkMode">Dark Mode</span>
             </div>
         </div>
 
@@ -33,15 +37,19 @@
 
         <section class="title title__container">        
 
-            <h1><i class="fa fa-fire" aria-hidden="true"></i> On Fire</h1>
-            <p>Maior rede Social de FPS!</p>
+            <h1><i class="fa fa-fire" aria-hidden="true"></i> Chama Nenem <img class="agumon" src="src/img/agu-preview.png" alt="digmon"></h1>
+            <p>Maior site de FPS do Brasil</p>
+
+            <div class="tittle__imgDesktop">
+                <img src="src/img/DIGIMON-SURVIVEXBOX-GAMEPASS.webp" alt="img digmon">
+            </div>
             
         </section>
 
         <!-- formulario  -->
         <section class="form__container">
 
-            <form class="form">
+           <form class="form">
 
                 <h2>Bem vindo!</h2>
 
@@ -54,12 +62,45 @@
                 <button type="submit">Entrar</button>
 
             </form>
+            
+            <div class="link-icons">
+                <a  href="#" class="fab fa-linkedin"></a>
+	            <a href="#" class="fab fa-instagram"></a>
+                <a class="fa fa-apple"></a>
+            </div>
 
-            <span class="form__register">not yet registered??</span>
+            <p class="form__register">Forgot your password? <span class="btnCadastrar cadastrar">➡ Click here</span></p> 
 
-            <a class="form__Pagesignup" href="#">Sing up</a>
+            <!-- <button  class="form__Pagesignup" >Sing up</button>  -->
+
+            <span class="form__Pagesignup">Sing up</span>
+
+           
+        
+            
+
+
         </section>
+
+<!--         
+       <div class="section_cadastra__modal">
+           
+            <form class="form__cadastra">
+                
+                <h2>Sing up!</h2>    
+
+                <label for="email">email</label>
+                <input class="password"  type="email" name="password" required placeholder="Digite seu Email ou nick"/>
+    
+                <button class="btnCadastra" type="submit">Recover Password</button>
+                <span class="btnVoltar" type="submit" >Back login</span>
+            </form>
+
+        </div>  -->
+
+       
     </main>
+
 
 </body>
 
