@@ -1,0 +1,121 @@
+
+
+
+
+body{
+  /* background-color: var(--bg-body); */
+}
+
+.cabecalho{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    box-shadow: 1px 1px 3px 1px #80808087;
+  
+}
+
+.cabecalho__icons{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  
+}
+
+
+.cabecalho__icons  > h2{
+   color: var(--color-title);
+    font-size: 1rem;
+}
+
+.cabecalho__icons > h2 > i{
+    color: var(--yesLike);
+}
+.darkMode{
+    display: flex;
+    align-self: flex-end;
+    background-color: aqua;  
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem  
+}
+
+.title__container{
+    margin-top: 2rem;
+}
+
+.title__container > h1{
+    border-bottom: solid 1px ;
+    color: var(--color-title);
+    font-size: 2rem;
+}
+.title__container > h1 > i{
+   color: var(--yesLike);
+}
+
+.title__container > p{
+    margin-top: .5rem;
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+/*  Estilo  Form  */
+.form__container{
+    gap: 1rem;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    padding: 1rem;
+    border-radius: 5px;
+    flex-direction: column;
+    align-content: center;
+    border: 1px solid #c5c5c5; 
+    background-color: var(--white);
+   
+}
+.form__container form{
+   display: flex;
+   flex-direction: column;
+    border: 1px solid #c5c5c5; 
+    /* padding: 1rem; */
+    gap: .4rem;
+
+}
+
+.form h2{
+    text-align: center;
+    color: var(--color-text);
+}
+
+.form label{
+    color: var(--color-text);
+}
+
+.form input{
+    margin-bottom: 1rem;
+    padding: .9rem;
+    border-radius: .9rem;
+    border: solid 1px;
+   
+}
+
+.form  button{
+   color: var(--color-title);
+}
+
+.form__container >span{
+    color: var(--color-title);
+}
+
+
+.form__container >a{
+    text-decoration: none;    
+    text-align: var(--color-title);
+}
