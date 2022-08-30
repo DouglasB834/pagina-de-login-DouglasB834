@@ -7,12 +7,12 @@ class darMolde{
         console.log(this.btnDarkMode)
         darMolde.btnDarkMode.addEventListener("click", ()=>{
             this.html.classList.toggle("darkMode")
-            darMolde.changeText()
+            this.changeText()
         })
     }
     static changeText(){
         if(this.html.classList.contains("darkMode")){
-            this.btnDarkMode.innerText = "Lighk Mode"
+            this.btnDarkMode.innerText = "Light Mode"
         }else{
             this.btnDarkMode.innerText = "Dark Mode"
         }

@@ -47,37 +47,3 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-:root{
-	--bg-body:#fff;
-	--blue: #4263EB;
-	--white: #fff ;
-	--color-text:#000000;
-	--color-title:#474747;
-
-	--yesLike :#D7443E;
-	--noLike: rgba(33, 37, 41, 0.5);
-	
-	--primary-bg-color:#113ac0;
-	--segund-bg-color:#f1f1f1;
-}
-
-.darkMode:root{
-	--bg-body:black;
-	--blue: #4263EB;
-	--white: #495057 ;
-	--color-text:#fff;
-	--color-title:#fff;
-
-	--yesLike :#D7443E;
-	--noLike: rgba(33, 37, 41, 0.5);
-	
-	--primary-bg-color:#113ac0;
-	--segund-bg-color:#000;
-}
-
-body{
-	width: 100%;
-	height: 100vh;
-
-}

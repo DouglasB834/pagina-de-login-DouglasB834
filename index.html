@@ -7,9 +7,14 @@
     <meta name="description" content="pagina de login  site">
     <link rel="shortcut icon" href="src/img/agu-preview.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Config fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Config Css -->
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/styleGlobal.css">
     <link rel="stylesheet" href="src/css/style.css">
     <!-- Config Java Script -->
     <script defer type="module" src="src/js/login.js"></script>
@@ -44,7 +49,7 @@
         <!-- formulario  -->
         <section class="form__container">
 
-            <form class="form">
+           <form class="form">
 
                 <h2>Bem vindo!</h2>
 
@@ -59,15 +64,52 @@
             </form>
             
             <div class="link-icons">
-                <a href="#" class="fab fa-linkedin"></a>
+                <a  href="#" class="fab fa-linkedin"></a>
 	            <a href="#" class="fab fa-instagram"></a>
-                <a class="fa fa-apple" aria-hidden="true"></a>
+                <a class="fa fa-apple"></a>
             </div>
-            <span class="form__register">Forgot your password? <a href="cadastrar.html"></a> ➡ Click here</span>
 
-            <!-- <button  class="form__Pagesignup" >Sing up</button> -->
-            <a class="form__Pagesignup" href="#">Sing up</a>
+            <p class="form__register">Forgot your password? <span>➡ Click here</span></p> 
+
+            <!-- <button  class="form__Pagesignup" >Sing up</button>  -->
+
+            <span class="form__Pagesignup">Sing up</span>
+
+            <a  href="#"></a>
+
+
+            <!-- cadastrar -->
+        
+            
+
+
         </section>
+
+        <div class="section_cadastra__modal">
+           
+            <form class="form__cadastra">
+
+                <h2>Sing up!</h2>    
+
+                <label for="login">Login</label>
+                <input class="login" type="text" name="login" placeholder="Digite seu login"  required />
+    
+                <label for="password">password</label>
+                <input class="password"  type="password" name="password" required placeholder="Digite sua senha" />
+                <label for="email">email</label>
+                <input class="password"  type="email" name="password" required placeholder="Digite seu Email" />
+    
+                <button class="btnCadastra" type="submit">Register</button>
+                <span class="btnVoltar" type="submit" >Back login</span>
+            </form>
+
+        </div>
+
+
+      
+        
+
+       
     </main>
 
 </body>
