@@ -43,6 +43,9 @@ body {
     cursor: pointer;
     z-index: 5;
 }
+.cabecalho a {
+    color:  var(--black-text);
+}
 
 
 .container {
