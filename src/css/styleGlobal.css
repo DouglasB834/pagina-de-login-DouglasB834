@@ -1,0 +1,39 @@
+
+
+:root{
+	--bg-body:#fff;
+
+	--white: #ecf0f1 ;
+	--blue:  #4263EB;
+	
+	--gray-title:#2d3436;
+	--black-text:#000000;
+
+	--redLike :#D7443E;
+	--blackLike: rgba(33, 37, 41, 0.5);
+	
+	--primary-bg-color:rgba(189, 177, 177, 0.514);
+	--segund-bg-color: rgba(136, 136, 136, 0.678);
+
+	/* modal */
+	--primary-modal: rgba(39, 39, 39, 0.76);
+
+	/* --primary-font: 'Roboto Slab', serif; */
+
+}
+
+.darkMode:root{
+	--bg-body:black;
+	--blue: #4263EB;
+	--white: #495057 ;
+	--gray-title:#fff;
+	--black-text:#fff;
+
+	--yesLike :#D7443E;
+	--noLike: rgba(33, 37, 41, 0.5);
+	
+	--primary-bg-color:rgba(41, 40, 40, 0.329);
+	--segund-bg-color: rgba(32, 31, 31, 0.815);
+}
+
+
