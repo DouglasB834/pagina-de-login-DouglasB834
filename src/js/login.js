@@ -1,7 +1,5 @@
 import { btnEvento } from "./modal.js";
 
-
-
 btnEvento.eventCadastrar()
 btnEvento.eventRecuperarSenha()
 

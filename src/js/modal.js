@@ -1,9 +1,6 @@
-
-
-
 export class Modal {
    
-    static body         = document.querySelector("body");
+    static body                         = document.querySelector("body");
 
     static modalCadastrar(event){
 
@@ -12,9 +9,8 @@ export class Modal {
         const tagDiv                    = document.createElement("div")
         const tagForm                   = document.createElement("form")
 
-        tagDiv.classList.add("section_cadastra__modal")
+        tagDiv.classList.add("div_cadastra__modal")
         tagForm.classList.add("form__cadastra")
-
 
         const tagH2                     = document.createElement("h2")
         tagH2.innerText                 = "Sing up!"
@@ -30,7 +26,6 @@ export class Modal {
         tagInputLogin.name              = "login"
         tagInputLogin.placeholder       = "Type yourlogin"
         tagInputLogin.required          = true
-
 
         const tagLabelPassword          = document.createElement("label")
         const tagInputPassword          = document.createElement("input")
@@ -55,7 +50,6 @@ export class Modal {
         tagInputEmail.required          = true
         tagInputEmail.placeholder       = "Type your e-mail"    
 
-
         const tagBtnCadastrar           = document.createElement("button")
         const tagbtnVoltar              = document.createElement("span")
 
@@ -76,8 +70,7 @@ export class Modal {
 
         tagDiv.append(tagForm)
         this.body.append(tagDiv)
-      
-        
+            
     }
     
     static modalRecuperarLogin(){
@@ -87,9 +80,8 @@ export class Modal {
         const tagH2                     = document.createElement("h2")
         tagH2.innerText                 = "Sing up!"
 
-        tagDiv.classList.add("section_cadastra__modal")
+        tagDiv.classList.add("div_cadastra__modal")
         tagForm.classList.add("form__cadastra")
-        // tagInputEmail.classList.add("login")
 
         const taglabelEmail             = document.createElement("label")
         const tagInputEmail             = document.createElement("input")
@@ -100,14 +92,12 @@ export class Modal {
         tagInputEmail.placeholder       = "Type your email or login"
         tagInputEmail.required          = true
         
-
         const tagBtnCadastrar           = document.createElement("button")
         const tagbtnVoltar              = document.createElement("span")
         tagBtnCadastrar.classList.add("btnCadastra")
         tagbtnVoltar.classList.add("btnVoltar")
         tagBtnCadastrar.innerText       = "Recover Password"
         tagbtnVoltar.innerText          = "Back login"
-
 
         tagbtnVoltar.addEventListener("click", ()=>{
             window.location.reload()
@@ -118,31 +108,13 @@ export class Modal {
             window.location.reload()
 
         })
+
         tagForm.append(tagH2, taglabelEmail, tagInputEmail, tagBtnCadastrar, tagbtnVoltar)
         tagDiv.append(tagForm)
         this.body.append(tagDiv)
 
-        /*
-           
-       <div class="section_cadastra__modal">
-           
-            <form class="form__cadastra">
-                
-                <h2>Sing up!</h2>    
-
-                <label for="email">email</label>
-                <input class="password"  type="email" name="password" required placeholder="Digite seu Email ou nick"/>
-    
-                <button class="btnCadastra" type="submit">Recover Password</button>
-                <span class="btnVoltar" type="submit" >Back login</span>
-            </form>
-
-        </div> 
-        
-        */
     }
 }
-
 
 export class btnEvento{
     static form__Pagesignup     = document.querySelector(".form__Pagesignup")
@@ -166,7 +138,7 @@ export class btnEvento{
 
     }
 
-
-
-
 }
+
+
+
